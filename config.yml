@@ -1,0 +1,20 @@
+NETWORK:
+  port: 10000
+  points: 10 # 제한 시간 동안 허용할 요청 횟수
+  duration: 5s # 요청 횟수를 계산할 기간 (s=초, m=분, h=시간)
+  block_duration: 5m # 요청 제한을 초과했을 때 차단되는 시간
+
+# 사이트의 루트 페이지 설정
+ROOT:
+  entry: root.html # 루트 페이지 파일이 없으면 기본 루트 페이지를 표시합니다.
+  redirect_to: home # 이동할 대상 페이지 이름 ()
+
+PAGES:
+  - name: 
+    entry: root.html
+    whitelist: []
+    redirect_to:
+
+  - name: home # 웹사이트 경로에 사용하는 페이지 이름
+    entry: index.html # 해당 페이지에서 표시할 HTML 파일
+    whitelist: ["127.0.0.1"] # 접속을 허용할 IP 목록입니다. []이면 모든 IP의 접속을 허용합니다.

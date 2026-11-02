@@ -1,0 +1,27 @@
+{
+  "name": "kw-web-tunnel",
+  "version": "0.0.0",
+  "description": "The web server app for writing node.js applications",
+  "type": "commonjs",
+  "main": "index.js",
+  "author": "Codingfolders",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "archiver": "^8.0.0",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "js-yaml": "^5.5.0",
+    "multer": "^2.5.0",
+    "oho-console": "^4.1.1",
+    "rate-limiter-flexible": "^11.2.3"
+  },
+  "imports": {
+    "#*": [
+      "./*"
+    ]
+  }
+}
